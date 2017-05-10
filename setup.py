@@ -19,7 +19,7 @@ if sys.version_info < (3, 5):
     raise RuntimeError('asyncpg requires Python 3.5 or greater')
 
 VERSION = '0.10.1'
-CFLAGS = ['-O2']
+CFLAGS = ['-O0']
 LDFLAGS = []
 
 if platform.uname().system == 'Windows':
